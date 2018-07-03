@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <android.support.v4.widget.CircleImageView
+        android:id="@+id/customlistimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profilepic"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/customlisttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/customlistimage"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/customlistlastmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customlisttext"
+        android:layout_below="@+id/customlisttext"
+        android:text="message"
+        android:singleLine="true"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/customlistcontacttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customlisttext"
+        android:layout_alignBottom="@+id/customlisttext"
+        android:layout_alignParentRight="true"
+        android:text="text"
+        android:layout_margin="10dp"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

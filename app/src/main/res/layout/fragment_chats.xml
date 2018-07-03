@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/switchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#000000"
+        android:orientation="vertical"
+        >
+
+        <Switch
+            android:id="@+id/switchforautoresponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center_vertical"
+            android:text="Switch On For Automated Response   "
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textAllCaps="true"/>
+        <Button
+            android:id="@+id/chatwithassistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with Assistant"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:background="#808080"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatfragmentrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/switchlayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/allusersbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+
+</RelativeLayout>

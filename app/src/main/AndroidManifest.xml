@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abcexample.myassistant">
+
+    <uses-sdk
+        android:maxSdkVersion="8"
+        android:minSdkVersion="5"
+        android:targetSdkVersion="6" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="android.permission.RECORD_AUDIO"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="android.permission.LOCATION"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyAssistant"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".AlarmReceiver">
+        </receiver>
+
+        <receiver android:name=".BootBroadcastReceiver">
+        </receiver>
+
+        <service
+            android:name=".AlarmService"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Login_Activity" />
+        <activity
+            android:name=".AllusersActivity"
+            android:label="All Users"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".StatusActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".AllusersActivity">
+            <intent-filter>
+                <action android:name="com.abcexample.myassistant_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FriendsActivity"
+            android:label="Friends"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FriendRequest"
+            android:label="Friend Requests"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".SplashActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AssistantActivity" />
+
+        <activity android:name=".ScheduleActivity"></activity>
+
+    </application>
+
+</manifest>

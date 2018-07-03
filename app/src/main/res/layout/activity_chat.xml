@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcexample.myassistant.ChatActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="10"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/addfilesbutton"
+            android:src="@drawable/ic_add_box_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/message"
+            android:hint="Type a Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"/>
+        <ImageButton
+            android:id="@+id/sendbutton"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_width="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

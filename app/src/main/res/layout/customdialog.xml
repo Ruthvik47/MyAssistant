@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:headerBackground="#000000"
+        android:numbersBackgroundColor="#000000"
+        android:numbersTextColor="#FFFFFF"
+        android:numbersSelectorColor="#808080"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+    </TimePicker>
+
+    <Spinner
+        android:id="@+id/taskspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="8dp"
+        android:popupBackground="@android:color/white"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        android:spinnerMode="dropdown" />
+
+       <EditText
+           android:id="@+id/customedittext"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter your custom Task"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="SAVE TASK"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+   </LinearLayout>
+</ScrollView>

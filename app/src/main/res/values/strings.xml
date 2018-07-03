@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyAssistant</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="recognise_image">Image Recogniser</string>
+    <string name="chats">Chats</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Account</string>
+    <string name="image_picker_error">Image Picker Error</string>
+    <string name="loading_message">Uploading Image.. Please Wait...!</string>
+    <string name="dialog_select_prompt">Choose a Picture</string>
+    <string name="dialog_select_gallery">Gallery</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="provider_settings_message">settings</string>
+    <string name="provider_settings_yes">yes</string>
+
+    <string-array name="Tasks">
+        <item>sleep</item>
+        <item>washroom</item>
+        <item>eating</item>
+        <item>gym</item>
+        <item>travelling</item>
+        <item>work</item>
+        <item>atmovie</item>
+        <item>event</item>
+        <item>other</item>
+    </string-array>
+
+</resources>

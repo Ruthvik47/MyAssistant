@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/friends"
+        android:title="Friends"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+    />
+
+
+    <item
+        android:id="@+id/requests"
+        android:title="Friend Requests"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        />
+
+    <item
+        android:id="@+id/schedule"
+        android:title="Schedule Tasks"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        />
+</menu>

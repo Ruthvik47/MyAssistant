@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#191919"
+    tools:context="com.abcexample.myassistant.AccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/accountscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profilepic"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Name"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey! This is my Status!!"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:background="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/accountphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:background="#FFFFFF"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:id="@+id/Changestatusbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Status"
+            android:textColor="#FFFFFF"
+            android:background="#808080"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/accountlogoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        android:text="LOGOUT"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

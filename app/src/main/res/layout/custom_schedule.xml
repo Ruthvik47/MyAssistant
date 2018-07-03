@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/scheduleicon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/profilepic"/>
+
+
+    <TextView
+        android:id="@+id/scheduletime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scheduletask"
+        android:layout_alignStart="@+id/scheduletask"
+        android:layout_alignTop="@+id/scheduleicon"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/scheduletask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="7dp"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp"
+        android:layout_below="@+id/scheduletime"
+        android:layout_toRightOf="@+id/scheduleicon"
+        android:layout_toEndOf="@+id/scheduleicon" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/editbutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/editbutton"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/timeduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="duration"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/scheduleicon"
+        android:layout_alignRight="@+id/editbutton"
+        android:layout_alignEnd="@+id/editbutton" />
+
+</RelativeLayout>

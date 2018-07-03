@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/chatlinearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/incoming_shape"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/outgoingmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="message"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/outgoingmessagetimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:text="time" />
+
+
+        <ImageView
+            android:id="@+id/outgoingmessage_image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
